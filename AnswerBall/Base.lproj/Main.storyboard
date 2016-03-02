@@ -36,7 +36,7 @@
                                     <action selector="getAnswerPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="udu-ZR-6Vp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Laf-R1-Whv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask a Question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Laf-R1-Whv">
                                 <rect key="frame" x="181" y="194" width="239" height="211"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="211" id="rdx-Ly-Mbc"/>

@@ -19,9 +19,30 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
         
         let answer = magicAnswers[rand]
         
-        magicAnswer.text = answer
-       
         playMagicSound()
+        
+        UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: { () -> Void in
+            
+            self.magicAnswer.alpha = 0.0
+            
+            })
+            { (Bool) -> Void in
+                
+                self.magicAnswer.text = answer
+                
+                UIView.animateWithDuration(0.5, animations: { () -> Void in
+                    
+                    self.magicAnswer.alpha = 1.0
+                    
+                })
+                
+        }
+        
+    }
+    
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        
+        getAnswerPressed()
         
     }
     
@@ -51,6 +72,7 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
         
         if magicSound.playing {
             magicSound.stop()
+            magicSound.currentTime = 0
         }
         
         magicSound.play()
